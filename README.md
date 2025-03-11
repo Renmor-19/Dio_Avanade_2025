@@ -1,3 +1,39 @@
-![mermaid-diagram-2025-03-11-210115](https://github.com/user-attachments/assets/617d1d93-cdd6-4f6c-8c53-ce966a11ef13)# Dio_Avanade_2025
-projetos relacionados ao Bootcamp
+# Projeto Bootcamp AVANADE 2025
 
+## Diagrama baseado no projeto Santander
+
+classDiagram
+    class User {
+        -string name
+        -Account account
+        -Feature[] features
+        -Card card
+        -News[] news
+    }
+
+    class Account {
+        -string number
+        -string agency
+        -float balance
+        -float limit
+    }
+
+    class Feature {
+        -string icon
+        -string description
+    }
+
+    class Card {
+        +string number
+        +float limit
+    }
+
+    class News {
+        -string icon
+        -string description
+    }
+
+    User "1" *-- "1" Account
+    User "1" *-- "N"Feature
+    User "1" *-- "1"Card
+    User "1" *-- "N"News
