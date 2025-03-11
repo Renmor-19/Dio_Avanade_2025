@@ -1,39 +1,4 @@
 # Projeto Bootcamp AVANADE 2025
 
 ## Diagrama baseado no projeto Santander
-
-classDiagram
-    class User {
-        -string name
-        -Account account
-        -Feature[] features
-        -Card card
-        -News[] news
-    }
-
-    class Account {
-        -string number
-        -string agency
-        -float balance
-        -float limit
-    }
-
-    class Feature {
-        -string icon
-        -string description
-    }
-
-    class Card {
-        +string number
-        +float limit
-    }
-
-    class News {
-        -string icon
-        -string description
-    }
-
-    User "1" *-- "1" Account
-    User "1" *-- "N"Feature
-    User "1" *-- "1"Card
-    User "1" *-- "N"News
+![Untitled diagram-2025-03-11-214629](https://github.com/user-attachments/assets/28cc4c1c-51b8-4d92-a1f5-b8d064ae60d8)
